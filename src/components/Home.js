@@ -3,17 +3,23 @@ import "../styles.css"
 import headerPic from '../images/headerPic.jpg'
 import arrow from '../images/arrow.svg'
 import Rectangle from 'react-rectangle'
-import Card from 'react-bootstrap/Card'
-import Button from 'react-bootstrap/Button'
-import CardDeck from 'react-bootstrap/CardDeck'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+import HeadShake from 'react-reveal/HeadShake';
+import Cards from './Cards.js'
 
 
 
 export default class Home extends React.Component {
+    // state = {
+    //     hover: false
+    // }
 
+    // hoverAnimate = () => {
+    //     this.setState({ hover: true }),
+    //         <HeadShake>{card}</HeadShake>
+    // }
+    // hoverAnimateOff = () => {
+    //     this.setState({ hover: false })
+    // }
     render() {
         return (
             <div>
@@ -64,81 +70,11 @@ export default class Home extends React.Component {
                 </Rectangle>
 
                 {/* adding cards */}
-                <Container>
-                    <CardDeck className="card-padding">
-                        <Row>
-                            <Col sm>
-                                <Card>
-                                    <Card.Header as="h5">Card 1</Card.Header>
-                                    <Card.Body>
-                                        <Card.Title>Special title treatment</Card.Title>
-                                        <Card.Text>
-                                            With supporting text below as a natural lead-in to additional content.</Card.Text>
-                                        <Button variant="primary">Go somewhere</Button>
-                                    </Card.Body>
-                                </Card>
-                            </Col>
-                            <Col sm>
+                {/* <HeadShake> */}
+                <Cards />
+                {/* <Cards onMouseEnter={this.hoverAnimate} onMouseLeave={this.hoverAnimateOff}/> */}
+                {/* </HeadShake> */}
 
-                                <Card>
-                                    <Card.Header as="h5">Card 2</Card.Header>
-                                    <Card.Body>
-                                        <Card.Title>Special title treatment</Card.Title>
-                                        <Card.Text>
-                                            With supporting text below as a natural lead-in to additional content.</Card.Text>
-                                        <Button variant="primary">Go somewhere</Button>
-                                    </Card.Body>
-                                </Card>
-                            </Col>
-                            <Col sm>
-                                <Card>
-                                    <Card.Header as="h5">Card 3</Card.Header>
-                                    <Card.Body>
-                                        <Card.Title>Special title treatment</Card.Title>
-                                        <Card.Text>
-                                            With supporting text below as a natural lead-in to additional content.</Card.Text>
-                                        <Button variant="primary">Go somewhere</Button>
-                                    </Card.Body>
-                                </Card>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col sm>
-                                <Card>
-                                    <Card.Header as="h5">Card 6</Card.Header>
-                                    <Card.Body>
-                                        <Card.Title>Special title treatment</Card.Title>
-                                        <Card.Text>
-                                            With supporting text below as a natural lead-in to additional content.</Card.Text>
-                                        <Button variant="primary">Go somewhere</Button>
-                                    </Card.Body>
-                                </Card>
-                            </Col>
-                            <Col sm>
-                                <Card>
-                                    <Card.Header as="h5">Card 4</Card.Header>
-                                    <Card.Body>
-                                        <Card.Title>Special title treatment</Card.Title>
-                                        <Card.Text>
-                                            With supporting text below as a natural lead-in to additional content.</Card.Text>
-                                        <Button variant="primary">Go somewhere</Button>
-                                    </Card.Body>
-                                </Card>
-                            </Col>
-                            <Col sm>
-                                <Card>
-                                    <Card.Header as="h5">Card 5</Card.Header>
-                                    <Card.Body>
-                                        <Card.Title>Special title treatment</Card.Title>
-                                        <Card.Text>
-                                            With supporting text below as a natural lead-in to additional content.</Card.Text>
-                                        <Button variant="primary">Go somewhere</Button>
-                                    </Card.Body>
-                                </Card>
-                            </Col>
-                        </Row>
-                    </CardDeck>
-                </Container>
             </div>
         )
     }
