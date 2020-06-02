@@ -3,8 +3,6 @@
 }
 
 h2 {
-    width: 547px;
-    height: 42px;
     color: #404040;
     font-family: "Metropolis-Bold";
     font-size: 36px;
@@ -13,8 +11,6 @@ h2 {
 }
 
 p {
-    width: 598px;
-    height: 405px;
     color: #3d3d3d;
     font-family: "Metropolis-Medium";
     font-size: 24px;
@@ -42,16 +38,20 @@ p {
     padding-top: 45 px;
 }
 
-.purpleHeader {
+.whiteRectangle .purpleLine {
+    margin-left: 64px;
+}
+
+.purpleLine {
     width: 117px;
     height: 5px;
     background-color: rgba(122, 80, 255, 0.53);
-    margin-left: 64px;
+    margin-left: 147px;
     margin-top: 27px;
 }
 
 .readMore {
-    width: 143px;
+    width: 170px;
     height: 27px;
     color: #7a50ff;
     font-family: "Metropolis Semi Bold";
@@ -61,4 +61,46 @@ p {
 
 .arrow {
     float: right;
+    margin-top: 10px;
+}
+
+.lightPurple {
+    height: 530px;
+    background-color: rgba(37, 87, 255, 0.03);
+    margin-top: 260px;
+}
+
+.fourCol {
+    padding-top: 86px;
+    padding-left: 161px;
+    text-align: center;
+    
+}
+
+.fourCol th {
+    width: 214px;
+    height: 68px;
+    color: #7a50ff;
+    font-family: "Metropolis-Bold";
+    font-size: 58px;
+    font-weight: 700;
+}
+
+.fourCol td {
+    width: 89px;
+    height: 33px;
+    color: #404040;
+    font-family: "Metropolis Semi Bold";
+    font-size: 33px;
+    font-weight: 600;
+}
+
+.projects {
+    margin-top: 140px;
+}
+
+.aToZBox {
+    height: 1047px;
+    background-color: rgba(98, 37, 54, 0.03);
+    margin-top: 120px;
 }
