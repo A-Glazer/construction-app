@@ -1,0 +1,64 @@
+.headerPic {
+    height: 963px;
+}
+
+h2 {
+    width: 547px;
+    height: 42px;
+    color: #404040;
+    font-family: "Metropolis-Bold";
+    font-size: 36px;
+    font-weight: 700;
+    padding-left: 147px;
+}
+
+p {
+    width: 598px;
+    height: 405px;
+    color: #3d3d3d;
+    font-family: "Metropolis-Medium";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 49px;
+    padding-left: 147px;
+}
+
+.whiteRectangle {
+    width: 722px;
+    height: 745px;
+    box-shadow: 0 10px 59px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    margin-left: 83px;
+    margin-top: -200px;  
+}
+
+.whiteRectangle h2 {
+    padding-left: 64px;
+    padding-top: 54 px;
+}
+
+.whiteRectangle p {
+    padding-left: 64px;
+    padding-top: 45 px;
+}
+
+.purpleHeader {
+    width: 117px;
+    height: 5px;
+    background-color: rgba(122, 80, 255, 0.53);
+    margin-left: 64px;
+    margin-top: 27px;
+}
+
+.readMore {
+    width: 143px;
+    height: 27px;
+    color: #7a50ff;
+    font-family: "Metropolis Semi Bold";
+    font-size: 27px;
+    font-weight: 600;
+} 
+
+.arrow {
+    float: right;
+}
