@@ -5,34 +5,15 @@ import CardDeck from 'react-bootstrap/CardDeck'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import {Animated} from "react-animated-css";
-// import HeadShake from 'react-reveal/HeadShake';
+
 
 
 export default class Cards extends React.Component {
 
-    // state = {
-    //     hover: false
-    // }
-
-    // hoverAnimate = () => {
-    //     this.setState({ hover: true }),
-    //     // <HeadShake>{card1}</HeadShake>
-    // }
-    // hoverAnimateOff = () => {
-    //     this.setState({hover: false})
-    // }
 
 
     render() {
-        // if (this.state.hover) {
 
-        //     return (
-        //     <HeadShake >
-        //        card
-        //     </HeadShake >
-        //     )
-        // }
         let card1 = (
             <Card>
                 <Card.Header as="h5" > Card 1</Card.Header >

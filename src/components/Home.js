@@ -9,17 +9,7 @@ import Cards from './Cards.js'
 
 
 export default class Home extends React.Component {
-    // state = {
-    //     hover: false
-    // }
 
-    // hoverAnimate = () => {
-    //     this.setState({ hover: true }),
-    //         <HeadShake>{card}</HeadShake>
-    // }
-    // hoverAnimateOff = () => {
-    //     this.setState({ hover: false })
-    // }
     render() {
         return (
             <div>
@@ -70,10 +60,8 @@ export default class Home extends React.Component {
                 </Rectangle>
 
                 {/* adding cards */}
-                {/* <HeadShake> */}
                 <Cards />
-                {/* <Cards onMouseEnter={this.hoverAnimate} onMouseLeave={this.hoverAnimateOff}/> */}
-                {/* </HeadShake> */}
+
 
             </div>
         )
