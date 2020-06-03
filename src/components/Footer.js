@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactDOM from 'react-dom';
 import "../styles.css"
 
 export default class Footer extends React.Component {
@@ -8,12 +9,16 @@ export default class Footer extends React.Component {
     }
 
     handleChange = event => {
+        
+        // alert("handle Change was clicked")
         this.setState({
             [event.target.name]: event.target.value
         })
     }
 
     handleSubmit = event => {
+        
+        // alert("handle submit was clicked")
         event.preventDefault()
         this.setState({
             language: event.target.value
@@ -24,7 +29,8 @@ export default class Footer extends React.Component {
         return (
             <div>
                 {/* Language Picker */}
-                <form onSubmit={this.handleSubmit}> 
+                {/* <form onSubmit={this.handleSubmit}>  */}
+                
                     <label className="languageForm">Language: </label>
                     <select name="language" value={this.state.language} onChange={this.handleChange}>
                         <option>Select Language</option>
@@ -32,12 +38,10 @@ export default class Footer extends React.Component {
                         <option value="español">español</option>
                         <option value="中文">中文</option>
                         <option value="русский">русский</option>
-                        <option value="עברית">עברית</option>
-                        <option value="عربى">عربى</option>
                     </select>
 
-                    <input type="submit" />
-                </form>
+                    {/* <input type="submit" /> */}
+                {/* </form> */}
             </div>
         )
     }

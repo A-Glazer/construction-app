@@ -16,7 +16,7 @@ class App extends React.Component {
           <Switch>
               <Route path="/" component={Home} />
           </Switch>
-          <Footer />
+          {/* <Footer /> */}
         </div>
       );
     }

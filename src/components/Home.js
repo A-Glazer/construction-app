@@ -5,6 +5,7 @@ import arrow from '../images/arrow.svg'
 import Rectangle from 'react-rectangle'
 import HeadShake from 'react-reveal/HeadShake';
 import Cards from './Cards.js'
+import Footer from './Footer.js'
 
 
 
@@ -62,6 +63,7 @@ export default class Home extends React.Component {
                 {/* adding cards */}
                 <Cards />
 
+<Footer />
 
             </div>
         )
